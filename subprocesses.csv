@@ -1,0 +1,25 @@
+parent,node,size,dist,unit cost,mass_scalar,rate_scalar,total
+,DNA synthesis,1,1,,,,164
+,RNA synthesis,1,1,,,,384
+,RNA turnover,1,1,,,,2.0832
+,Protein turnover,1,1,,,,2730
+,Protein synthesis,1,1,,,,15834
+DNA synthesis,helix unwinding,1,1,1,1,1,1
+DNA synthesis,histone,1,1,,,,160
+histone,aa synthesis,1,1,134,1,1,134
+histone,chain elongation,1,1,26,1,1,26
+RNA synthesis,rNTP synthesis,1,1,,,,384
+DNA synthesis,chain elongation,1,1,,,,3
+rNTP synthesis,PRPP,1,1,29,8,1,232
+rNTP synthesis,glyc/asp. Synthesis,1,1,10.5,8,1,84
+rNTP synthesis,other inputs,1,1,8.5,8,1,68
+DNA synthesis,dNTP synthesis,1,1,,,,100
+dNTP synthesis,PRPP,1,1,29,2,1,58
+dNTP synthesis,glyc/asp. Synthesis,1,1,10.5,2,1,21
+dNTP synthesis,other inputs,1,1,10.5,2,1,21
+Protein synthesis,aa synthesis,1,1,25,546,1,13650
+Protein synthesis,chain elongation,1,1,4,546,1,2184
+RNA turnover,rNTP recharge,1,1,2,8,0.12,1.92
+RNA turnover,nucleosome dissassembly,1,1,0.17,8,0.12,0.1632
+Protein turnover,chain elongation,1,1,4,546,1,2184
+Protein turnover,degredation,1,1,1,546,1,546
