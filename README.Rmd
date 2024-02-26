@@ -7,6 +7,8 @@ output:
     variant: markdown_github
 ---
 
+The README.Rmd file contains all code necessary to reproduce results in the manuscript. To run the code, download the repository, open README.Rmd in Rstudio, change the root.dir (first chunk) to match your local directory, then press "Knit". The expected output should match the contents of the file README.md. The typical runtime is expected to be a few seconds on a "normal" desktpop computer.
+
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir = "~/projects/007_energetics_perspective/00_rev0/")
 ```
@@ -693,9 +695,13 @@ ggsave("top.png",plot=top,width=5,height=2.5,units="in")
 right <- cowplot::plot_grid(paa,pnaa,pcomp,nrow=3,labels=c("D","E","F"))
 ggsave("right.png",plot=right,width=4,height=7.5,units="in")
 
-
-
-
 ```
 
+Rstudio version: (RStudio 2023.03.0+386 "Cherry Blossom" Release (3c53477afb13ab959aeb5b34df1f10c237b256c3, 2023-03-09) for Windows
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) RStudio/2023.03.0+386 Chrome/108.0.5359.179 Electron/22.0.3 Safari/537.36)
+
+Packages version info:
+```{r}
+print(sessionInfo())
+```
 

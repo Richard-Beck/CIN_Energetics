@@ -1,3 +1,10 @@
+The README.Rmd file contains all code necessary to reproduce results in
+the manuscript. To run the code, download the repository, open
+README.Rmd in Rstudio, change the root.dir (first chunk) to match your
+local directory, then press “Knit”. The expected output should match the
+contents of the file README.md. The typical runtime is expected to be a
+few seconds on a “normal” desktpop computer.
+
 ``` r
 base_plot_size=10
 library(ggplot2)
@@ -752,3 +759,49 @@ pburst
   #scale_y_continuous(expand = expansion(mult = c(0, -0.1)))+
 #ggsave("sunburst.png",plot=pburst,width=5,height=5,units="in")
 ```
+
+Rstudio version: (RStudio 2023.03.0+386 “Cherry Blossom” Release
+(3c53477afb13ab959aeb5b34df1f10c237b256c3, 2023-03-09) for Windows
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+like Gecko) RStudio/2023.03.0+386 Chrome/108.0.5359.179 Electron/22.0.3
+Safari/537.36)
+
+Packages version info:
+
+``` r
+print(sessionInfo())
+```
+
+    ## R version 4.1.0 (2021-05-18)
+    ## Platform: x86_64-w64-mingw32/x64 (64-bit)
+    ## Running under: Windows 10 x64 (build 19044)
+    ## 
+    ## Matrix products: default
+    ## 
+    ## locale:
+    ## [1] LC_COLLATE=English_United States.1252 
+    ## [2] LC_CTYPE=English_United States.1252   
+    ## [3] LC_MONETARY=English_United States.1252
+    ## [4] LC_NUMERIC=C                          
+    ## [5] LC_TIME=English_United States.1252    
+    ## 
+    ## attached base packages:
+    ## [1] stats     graphics  grDevices utils     datasets  methods   base     
+    ## 
+    ## other attached packages:
+    ## [1] ggsunburst_0.3.0 reticulate_1.25  ggplot2_3.3.6   
+    ## 
+    ## loaded via a namespace (and not attached):
+    ##  [1] tidyselect_1.1.2  xfun_0.31         purrr_0.3.4       reshape2_1.4.4   
+    ##  [5] pbapply_1.5-0     lattice_0.20-44   colorspace_2.0-3  vctrs_0.4.1      
+    ##  [9] generics_0.1.3    htmltools_0.5.5   viridisLite_0.4.0 yaml_2.3.5       
+    ## [13] utf8_1.2.2        rlang_1.0.4       pillar_1.8.0      glue_1.6.2       
+    ## [17] withr_2.5.0       DBI_1.1.3         lifecycle_1.0.1   plyr_1.8.7       
+    ## [21] stringr_1.4.0     munsell_0.5.0     gtable_0.3.0      evaluate_0.15    
+    ## [25] labeling_0.4.2    knitr_1.39        fastmap_1.1.0     parallel_4.1.0   
+    ## [29] fansi_1.0.3       highr_0.9         Rcpp_1.0.9        scales_1.2.0     
+    ## [33] jsonlite_1.8.0    farver_2.1.1      png_0.1-7         digest_0.6.29    
+    ## [37] stringi_1.7.6     dplyr_1.0.9       grid_4.1.0        rprojroot_2.0.3  
+    ## [41] here_1.0.1        cli_3.3.0         tools_4.1.0       magrittr_2.0.3   
+    ## [45] tibble_3.1.8      pkgconfig_2.0.3   Matrix_1.5-4      assertthat_0.2.1 
+    ## [49] rmarkdown_2.14    rstudioapi_0.13   R6_2.5.1          compiler_4.1.0
